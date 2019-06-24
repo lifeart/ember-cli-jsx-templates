@@ -104,7 +104,7 @@ will be compiled into:
 `.tsx` template, with typings & autocomplete:
 ```tsx
 import { FooProp } from "./../../typings";
-function TypedHello(props: FooProp) {
+export default function TypedHello(props: FooProp) {
     return <h1>This is typed template! And name is: {props.name}</h1>
 }
 ```
