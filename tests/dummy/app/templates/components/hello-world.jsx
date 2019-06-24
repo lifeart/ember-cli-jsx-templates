@@ -1,1 +1,3 @@
-<div attributes>Hi! {name} {props.children} {3 + 4}</div>
+export default function HelloWorld() {
+    return <div attributes>Hi! {name} {yield()} {3 + 4}</div>;
+}
