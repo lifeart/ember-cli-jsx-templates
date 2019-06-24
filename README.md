@@ -26,7 +26,7 @@ __a__: Nope, and never planned to be, all supported cases described in tests.
 ---
 __q__: _If I spend some time, playing this addon, can I revert created `jsx` into `hbs`?_
 
-__a__: Yes, if you playing enough with jsx you able to convert template to hbs using `ember-meta-explorer` __extractJSXComponents__ method.
+__a__: Yes, if you played enough with `jsx` you able to convert template to hbs using `ember-meta-explorer` __extractJSXComponents__ method.
 
 ---
 
