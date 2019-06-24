@@ -13,6 +13,12 @@ __a__: If you came from React, or want to "touch" JSX in Ember with an easy way,
 
 ---
 
+__q__: _Can I use typings? Component types for autocomplete?_
+
+__a__: Yes! You can create `.tsx` template and import any typings into it.
+
+---
+
 __q__: _How it's working?_
 
 __a__: Addon perform `.jsx` to `JSX-AST` transform, after we transform `JSX-AST` into `HBS-AST` and after we compile template from valid handlebars `AST`.
@@ -93,6 +99,18 @@ yield with params:
 will be compiled into:
 ```hbs
 <div>{{yield name (hash foo=1)}}</div>
+```
+---
+`.tsx` template, with typings & autocomplete:
+```tsx
+import { FooProp } from "./../../typings";
+function TypedHello(props: FooProp) {
+    return <h1>This is typed template! And name is: {props.name}</h1>
+}
+```
+will be compiled into:
+```hbs
+<h1>This is typed template! And name is: {{@name}}</h1>
 ```
 ---
 All supported cases: [lifeart/ember-meta-explorer/test/utils/jsx-caster.test.js](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-caster.test.js)
