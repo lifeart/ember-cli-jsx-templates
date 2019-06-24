@@ -19,6 +19,11 @@ __a__: Addon perform `.jsx` to `JSX-AST` transform, after we transform `JSX-AST`
 
 ---
 
+__q__: _Is it Turing complete  transpilation?_
+
+__a__: Nope, and never planned to be, all supported cases described in tests.
+
+---
 __q__: _If I spend some time, playing this addon, can I revert created `jsx` into `hbs`?_
 
 __a__: Yes, if you playing enough with jsx you able to convert template to hbs using `ember-meta-explorer` __extractJSXComponents__ method.
