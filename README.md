@@ -1,6 +1,8 @@
 ember-cli-jsx-templates
 ==============================================================================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/lifeart/ember-cli-jsx-templates.svg)](https://greenkeeper.io/)
+
 This addon allow use `.jsx/.tsx` syntaxis for templates.
 
 Compatibility
