@@ -29,7 +29,7 @@ basic usage
 <div>{3 + 2} { props.children } { name } { props.external }</div>
 
 ```
-will be compiled in into:
+will be compiled into:
 
 ```hbs
 <div {{add 3 2}} {{yield}} {{this.name}} {{@external}}></div>
