@@ -48,6 +48,19 @@ will be compiled into:
 <MyComponent name="foo" @value={{42}} @onChange={{action "update"}} />
 ```
 
+jsx having modifier:
+
+```jsx
+<div mod-style={{color:"#face8d", ["font-size"]: "12px"}}></div>
+// named arguments for modifiers not supported
+```
+
+will be compiled into:
+
+```hbs
+<div {{style (hash color="#face8d" font-size= "12px")}}></div>
+```
+
 All supported cases: [lifeart/ember-meta-explorer/test/utils/jsx-caster.test.js](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-caster.test.js)
 
 
