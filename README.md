@@ -26,13 +26,13 @@ basic usage
 ```jsx
 // app/templates/components/my-component.jsx
 
-<div>{3 + 2} { props.children } { name } { props.external }</div>
+<div attributes>{3 + 2} { props.children } { name } { props.external }</div>
 
 ```
 will be compiled into:
 
 ```hbs
-<div {{add 3 2}} {{yield}} {{this.name}} {{@external}}></div>
+<div ...attributes> {{add 3 2}} {{yield}} {{this.name}} {{@external}}></div>
 
 ```
 
