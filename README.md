@@ -29,7 +29,7 @@ basic usage
 <div>{3 + 2} { props.children } { name } { props.external }</div>
 
 ```
-will be compiled in into
+will be compiled in into:
 
 ```hbs
 <div {{add 3 2}} {{yield}} {{this.name}} {{@external}}></div>
@@ -42,7 +42,7 @@ jsx for ember components:
 <MyComponent attr-name="foo" value={42} onChange={action("update")} />
 ```
 
-will be compiled as
+will be compiled into:
 
 ```hbs
 <MyComponent name="foo" @value={{42}} @onChange={{action "update"}} />
