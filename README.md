@@ -3,7 +3,6 @@ ember-cli-jsx-templates
 
 This addon allow use `.jsx/.tsx` syntaxis for templates.
 
-
 Compatibility
 ------------------------------------------------------------------------------
 
@@ -48,6 +47,9 @@ will be compiled as
 ```hbs
 <MyComponent name="foo" @value={{42}} />
 ```
+
+All supported cases: [lifeart/ember-meta-explorer/test/utils/jsx-caster.test.js](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-caster.test.js)
+
 
 Contributing
 ------------------------------------------------------------------------------
