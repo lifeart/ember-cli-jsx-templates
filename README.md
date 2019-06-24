@@ -39,13 +39,13 @@ will be compiled in into
 jsx for ember components:
 
 ```jsx
-<MyComponent attr-name="foo" value={42} />
+<MyComponent attr-name="foo" value={42} onChange={action("update")} />
 ```
 
 will be compiled as
 
 ```hbs
-<MyComponent name="foo" @value={{42}} />
+<MyComponent name="foo" @value={{42}} @onChange={{action "update"}} />
 ```
 
 All supported cases: [lifeart/ember-meta-explorer/test/utils/jsx-caster.test.js](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-caster.test.js)
