@@ -5,6 +5,13 @@ ember-cli-jsx-templates
 
 This addon allow use `.jsx/.tsx` syntaxis for templates.
 
+---
+
+__q__: _Why?_
+
+__a__: If you came from React, or want to "touch" JSX in Ember with an easy way, this is for you!
+
+---
 
 __q__: _How it's working?_
 
@@ -16,6 +23,7 @@ __q__: _If I spend some time, playing this addon, can I revert created `jsx` int
 
 __a__: Yes, if you playing enough with jsx you able to convert template to hbs using `ember-meta-explorer` __extractJSXComponents__ method.
 
+---
 
 Compatibility
 ------------------------------------------------------------------------------
