@@ -1,7 +1,7 @@
 ember-cli-jsx-templates
 ==============================================================================
 
-[Short description of the addon.]
+This addon allow use `.jsx/.tsx` syntaxis for templates.
 
 
 Compatibility
@@ -22,8 +22,32 @@ ember install ember-cli-jsx-templates
 Usage
 ------------------------------------------------------------------------------
 
-[Longer description of how to use the addon in apps.]
+basic usage
 
+```jsx
+// app/templates/components/my-component.jsx
+
+<div>{3 + 2} { props.children } { name } { props.external }</div>
+
+```
+will be compiled in into
+
+```hbs
+<div {{add 3 2}} {{yield}} {{this.name}} {{@external}}></div>
+
+```
+
+jsx for ember components:
+
+```jsx
+<MyComponent attr-name="foo" value={42} />
+```
+
+will be compiled as
+
+```hbs
+<MyComponent name="foo" @value={{42}} />
+```
 
 Contributing
 ------------------------------------------------------------------------------

@@ -1,0 +1,1 @@
+<div>Hi! {name} {props.children} {3 + 4}</div>
