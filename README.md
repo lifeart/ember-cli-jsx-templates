@@ -66,11 +66,11 @@ will be compiled into:
 ---
 jsx for ember components:
 ```jsx
-<MyComponent attr-name="foo" value={42} onChange={action("update")} />
+<MyComponent attr-name="foo" value={42} data-test-name="item" onChange={action("update")} />
 ```
 will be compiled into:
 ```hbs
-<MyComponent name="foo" @value={{42}} @onChange={{action "update"}} />
+<MyComponent name="foo" @value={{42}} data-test-name="item" @onChange={{action "update"}} />
 ```
 ---
 jsx having modifier:
