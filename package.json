@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-jsx-templates",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "JSX to Handlebars templates compiler",
   "keywords": [
     "ember-addon"
