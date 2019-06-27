@@ -160,7 +160,7 @@ will be compiled into:
 
 ### How convert JSX back to HBS and save it?
 
-Following blueprint converting any `.jsx/.tsx` file into `.hbs` template.
+Following blueprint created to convert any `.jsx/.tsx` file into `.hbs` template.
 
 ```
 ember g jsx-template-to-hbs app/templates/components/hello-world.jsx
