@@ -155,7 +155,18 @@ will be compiled into:
 ```hbs
 <h1>This is typed template! And name is: {{@name}}</h1>
 ```
-
+---
+subtemplates declaration:
+```jsx
+export function MyComponent() {
+  const localTemplate = <h1>Hello!</h1>
+  return <div>{localTemplate}</div>
+}
+```
+will be compiled into:
+```hbs
+<div><h1>Hello!</h1></div>
+```
 ---
 
 ### How convert JSX back to HBS and save it?
