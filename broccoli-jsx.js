@@ -45,8 +45,13 @@ JSXFilter.prototype.processString = function (string) {
   try {
     let components = extractJSXComponents(string);
     let keys = Object.keys(components);
-    let component = components[keys[0]];
-    return component;
+    let firstKey = keys[0];
+    let declaratedKey = firstKey + '_declarated';
+    if (components[declaratedKey]) {
+      return components[declaratedKey];
+    } else {
+      return components[firstKey];
+    }
   } catch (err) {
     // first_line/first_column properties; pass them on
     // err.line = err.location && ((err.location.first_line || 0) + 1)
