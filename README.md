@@ -54,6 +54,53 @@ ember install ember-cli-jsx-templates
 Usage
 ------------------------------------------------------------------------------
 
+template-only usecase
+```jsx
+// app/templates/components/my-functional-component
+export default function MyFunctionalComponent({name, onChange}) {
+ const inputPrefix = 'New name:';
+ return (
+   <>
+   <h1>JSX templates for Ember!</h1>
+   <p>Hello, {name}!</p><br />
+   {inputPrefix}: <input class="my-input" value={name} onkeyup={onChange}/>
+   </>
+ )
+}
+```
+
+any ember component + template usecase (with this):
+
+```js
+// app/components/my-functional-component
+import Component from '@ember/component';
+export default class MyComponent extends Component {
+    constructor() {
+        super(...arguments);
+        this.onChange = this.onChange.bind(this);
+    }
+    inputPrefix = "Nemo";
+    onChange(e) {
+        this.set('inputPrefix', e.target.value);
+    }    
+}
+```
+and
+```jsx
+// app/templates/components/my-functional-component
+export default function MyFunctionalComponent() {
+    return (
+      <>
+      <h1>JSX templates for Ember!</h1>
+      <p>Hello, {this.inputPrefix}!</p><br />
+      Update: <input class="my-input" value={name} onkeyup={this.onChange}/>
+      </>
+    )
+}
+```
+
+------------------------------------------------------------------------------
+
 basic usage:
 ```jsx
 // app/templates/components/my-component.jsx
