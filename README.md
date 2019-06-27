@@ -27,7 +27,7 @@ __a__: Addon perform `.jsx` to `JSX-AST` transform, after we transform `JSX-AST`
 
 __q__: _Is it Turing complete  transpilation?_
 
-__a__: Nope, and never planned to be, all supported cases described in [tests](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-caster.test.js).
+__a__: Nope, and never planned to be, all supported cases described in [jsx-caster tests](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-caster.test.js) and [jsx-extractor tests](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-extractor.test.js)
 
 ---
 __q__: _If I spend some time, playing this addon, can I revert created `jsx` into `hbs`?_
