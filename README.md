@@ -75,10 +75,6 @@ any ember component + template usecase (with this):
 // app/components/my-functional-component
 import Component from '@ember/component';
 export default class MyComponent extends Component {
-    constructor() {
-        super(...arguments);
-        this.onChange = this.onChange.bind(this);
-    }
     inputPrefix = "Nemo";
     onChange(e) {
         this.set('inputPrefix', e.target.value);
@@ -93,7 +89,7 @@ export default function MyFunctionalComponent() {
       <>
       <h1>JSX templates for Ember!</h1>
       <p>Hello, {this.inputPrefix}!</p><br />
-      Update: <input class="my-input" value={name} onkeyup={this.onChange}/>
+      Update: <input class="my-input" value={name} onkeyup={action(this.onChange)}/>
       </>
     )
 }
