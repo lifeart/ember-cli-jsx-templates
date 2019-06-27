@@ -155,6 +155,27 @@ will be compiled into:
 ```hbs
 <h1>This is typed template! And name is: {{@name}}</h1>
 ```
+
+---
+
+### How convert JSX back to HBS and save it?
+
+Following blueprint converting any `.jsx/.tsx` file into `.hbs` template.
+
+```
+ember g jsx-template-to-hbs app/templates/components/hello-world.jsx
+
+options:
+   no-remove - no remove jsx/tsx source
+   no-write  - no wite converted output
+   no-rewrite - no rewrite template file if already exists
+   new-path:"app/templates/components/original.hbs" - new template file name
+```
+
+---
+
+### Can I convert HBS back to JSX? - nope
+
 ---
 All supported cases: [lifeart/ember-meta-explorer/test/utils/jsx-caster.test.js](https://github.com/lifeart/ember-meta-explorer/blob/master/test/utils/jsx-caster.test.js)
 
