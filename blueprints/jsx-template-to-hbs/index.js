@@ -1,6 +1,7 @@
 'use strict';
 const { extractJSXComponents } = require('ember-meta-explorer');
-const  { print, preprocess }  = require('@glimmer/syntax');
+// eslint-disable-next-line node/no-extraneous-require
+const  { print, preprocess }  = require('@glimmer/syntax'); // use version from ember-meta-explorer
 const fs = require('fs');
 const path = require('path');
 
@@ -8,7 +9,6 @@ module.exports = {
   description: 'converts jsx/tsx templates into hbs',
 
   locals(options) {
-    console.log(JSON.stringify(options.entity));
     return {
       filePath: options.entity.name
     };

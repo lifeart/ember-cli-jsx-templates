@@ -1,5 +1,5 @@
 'use strict';
-
+/* eslint-env node */
 var Filter = require('broccoli-persistent-filter')
 // var stringify = require('json-stable-stringify')
 var { extractJSXComponents } = require('ember-meta-explorer');
