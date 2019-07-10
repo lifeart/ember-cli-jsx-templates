@@ -773,12 +773,27 @@
   resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.41.0.tgz#3f571a181025406f29faed9006d0a914afb577b1"
   integrity sha512-d0Ryj8iV3FiyMyT4QpwHNg2QFFEmdzI5cJFcbmC+OmuTe6eOQ52mLDlw1+D+a3ZDv8Jfj3l0QkEcEugCxDY+1Q==
 
+"@glimmer/interfaces@^0.41.3":
+  version "0.41.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/interfaces/-/interfaces-0.41.3.tgz#33cc6e0e1d7c2696ad59c1b68d723e9c1ea944ec"
+  integrity sha512-EgJYw+2YyMztC2O2yuhRfb2SlAxXGBx6ug4b6qnjLrpypsKFZEE17/2gDi+f8lPFQct96uQW8ja4w9RQI85vMw==
+
 "@glimmer/resolver@^0.4.1":
   version "0.4.3"
   resolved "https://registry.yarnpkg.com/@glimmer/resolver/-/resolver-0.4.3.tgz#b1baae5c3291b4621002ccf8d7870466097e841d"
   integrity sha512-UhX6vlZbWRMq6pCquSC3wfWLM9kO0PhQPD1dZ3XnyZkmsvEE94Cq+EncA9JalUuevKoJrfUFRvrZ0xaz+yar3g==
   dependencies:
     "@glimmer/di" "^0.2.0"
+
+"@glimmer/syntax@0.41.3":
+  version "0.41.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/syntax/-/syntax-0.41.3.tgz#f8feab2a6f24c922a8950992ca56bb9980d2b571"
+  integrity sha512-sHNqAGNMX4vs7gqRCye3F2COxu5sZKB/45Uclyn58GMVkIcRXYGyggKxMEH+m5fOvoAjhQPawjRBnsi/ccfR1A==
+  dependencies:
+    "@glimmer/interfaces" "^0.41.3"
+    "@glimmer/util" "^0.41.3"
+    handlebars "^4.0.13"
+    simple-html-tokenizer "^0.5.7"
 
 "@glimmer/syntax@^0.41.0":
   version "0.41.0"
@@ -794,6 +809,11 @@
   version "0.41.0"
   resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.41.0.tgz#743fa455d1d7fa0ce29688e932c231a99c0752cf"
   integrity sha512-aKmQy62eRFhOZET9XmTB8MOA32G1FmD4d9HWL21OfdcGM4IbguRrWLMQc2DRh1YOE2AaT0PBrFrPmpNwFp5tpQ==
+
+"@glimmer/util@^0.41.3":
+  version "0.41.3"
+  resolved "https://registry.yarnpkg.com/@glimmer/util/-/util-0.41.3.tgz#52e34c0c4dc0fdf56f8e4bda3f119269067b0887"
+  integrity sha512-CdrBBJVfQNhy6YX7itj65lI4q29SW5BGaPFR9WgOMd5snFQ4CbSymdFAdiV8QNRBs2Ax27FKrC3ciGZ9qtZ6Ew==
 
 "@glimmer/wire-format@^0.41.0":
   version "0.41.0"
@@ -3404,10 +3424,10 @@ ember-maybe-import-regenerator@^0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-meta-explorer@^0.0.29:
-  version "0.0.29"
-  resolved "https://registry.yarnpkg.com/ember-meta-explorer/-/ember-meta-explorer-0.0.29.tgz#9313e137156fc2fb58994c80a1d691b450acc035"
-  integrity sha512-vzTuD0r5fMoYM39zhIW0etAAanXQwFIq/I/Tp+u2hM0s7aWtCUsWRi6WgLshmm6zjSDWKF+wYJr6S/cIrUyuAA==
+ember-meta-explorer@^0.0.34:
+  version "0.0.34"
+  resolved "https://registry.yarnpkg.com/ember-meta-explorer/-/ember-meta-explorer-0.0.34.tgz#a96a310799240525c3f6a937be2661ceeaa369ae"
+  integrity sha512-4L/6wpGwh/D0Jc8CKhjGzlGra5vx3ssqTLLOsCH83ByJbzl9NETCIug15QmNVUWKOxwwqWQAbsIlCHkH9HeuWw==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.4.0"
@@ -3416,7 +3436,7 @@ ember-meta-explorer@^0.0.29:
     "@babel/plugin-proposal-object-rest-spread" "^7.4.0"
     "@babel/preset-env" "^7.4.2"
     "@babel/preset-typescript" "^7.3.3"
-    "@glimmer/syntax" "^0.41.0"
+    "@glimmer/syntax" "0.41.3"
     walk-sync "^1.1.3"
 
 ember-modifier-manager-polyfill@^1.0.3:
