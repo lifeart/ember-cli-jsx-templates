@@ -1,6 +1,8 @@
-export function template({name, url}) {
+export function template({name, url, onLogoClick}) {
     return <>
-        <img src={url} attributes/>
-        <div>{name}</div>
+        <div>
+            <img onClick={optional( onLogoClick)} src={url} attributes/>
+            <div>{name}</div>
+        </div>
     </>;
 }
