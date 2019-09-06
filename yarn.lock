@@ -3449,10 +3449,10 @@ ember-maybe-import-regenerator@^0.1.6:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
-ember-meta-explorer@^0.0.38:
-  version "0.0.38"
-  resolved "https://registry.yarnpkg.com/ember-meta-explorer/-/ember-meta-explorer-0.0.38.tgz#01c19d3cc01598aa2c1a597418d4ea99975b5e6a"
-  integrity sha512-bRrT9p5/JpT3UNMkHsmKMKVBOcVJlEVHN22xHk5yB5WdSc+0uKqkzZotjEwUVKPSIzyHukpgI3eab/+yM78yGg==
+ember-meta-explorer@^0.0.39:
+  version "0.0.39"
+  resolved "https://registry.yarnpkg.com/ember-meta-explorer/-/ember-meta-explorer-0.0.39.tgz#f6f3281fdead233c87912bfdd10431244282d924"
+  integrity sha512-h1kFwZdk4CGZ/3HMKVyTp/ekhUpbwATjhQzo8XLO1mr3rOQ8/L6e1B20zKiIumNDo+qqCzPAoPYWRI2ba64qJw==
   dependencies:
     "@babel/cli" "^7.2.3"
     "@babel/core" "^7.4.0"
