@@ -1,6 +1,4 @@
-<HelloPiterjs @confName="PiterJSConf 2019" @showLabel={{this.showLabel}}>
-  <ConfLogo @onLogoClick={{action "sayHi"}} style="width:200px;" @name="[I'm logo]" @url="images/logo.png" />
-  <ConfLogo style="width:200px;" @name="[I'm another logo]" @url="images/ember.png" />
-  <ConfLogo style="width:200px;" @name="[I'm another logo]" @url="images/react.png" />
-</HelloPiterjs>
-
+<ApplicationEntry 
+  @toggleLabel={{action "sayHi"}} 
+  @showLabel={{this.showLabel}}
+/>
