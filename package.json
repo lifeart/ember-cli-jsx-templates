@@ -27,7 +27,7 @@
     "ember-math-helpers": "^2.11.2",
     "ember-meta-explorer": "^0.0.39",
     "ember-on-modifier": "^0.12.4",
-    "ember-style-modifier": "^0.4.1",
+    "ember-style-modifier": "^0.5.0",
     "ember-truth-helpers": "^2.1.0"
   },
   "devDependencies": {
